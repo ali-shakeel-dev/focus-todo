@@ -19,20 +19,10 @@ body {
     color: aliceblue;
 }
 
-/* 
+
 ::selection {
     background-color: aliceblue;
-    color: black; 
-}*/
-
-.mouse {
-    width: 10px;
-    height: 10px;
-    mix-blend-mode: difference;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    transition: all ease .2s;
+    color: black;
 }
 
 .container {
@@ -63,19 +53,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10% 0;
 }
 
 .container .clock-container>h1 {
-    font-size: 60px;
+    font-size: 6rem;
 }
+
+.clock-btn2 {
+    width: 100%;
+    height: 60%;
+}
+
 
 #startBtn {
     outline: none;
     border: none;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 5% 0;
     cursor: pointer;
     font-weight: bold;
     width: 100%;
@@ -91,6 +86,7 @@ body {
     overflow: hidden;
     border: 2px solid white;
     display: none;
+    position: relative;
 }
 
 .container2.true {
@@ -110,20 +106,58 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10% 0;
 }
 
 .container2 .clock-container2>h1 {
-    font-size: 60px;
+    font-size: 6rem;
 }
 
 #startBtn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     outline: none;
     border: none;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 5% 20px;
     cursor: pointer;
     font-weight: bold;
     width: 100%;
+}
+
+
+.extraButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+    width: 100%;
+    margin-top: 1%;
+    gap: 1%;
+}
+
+.extraBtn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 5%;
+    border-radius: 5px;
+}
+
+#reloadButton {
+    display: none;
+}
+
+#reloadButton.true {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

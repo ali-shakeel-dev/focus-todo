@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Focus Todo - CountdownTimer</title>
+    <title>Focus Todo - Pomodoro Timer</title>
 </head>
 
 <body>
-    <div class="mouse"></div>
-    <!-- Start -->
-
-    <!-- Container 1 -->
+    <!-- Focus Container 1 -->
     <div class="container">
         <div class="timer-container">
             <h1 id="focusTime">Focus Time</h1>
@@ -24,8 +21,7 @@
             <button id="startBtn">Start</button>
         </div>
     </div>
-    <!-- Container 2 -->
-
+    <!-- Focus Container 2 -->
     <div class="container2">
         <div class="timer-container2">
             <h1 id="focusTime2">Break Time</h1>
@@ -39,7 +35,12 @@
             <button id="startBtn2">Start Break</button>
         </div>
     </div>
-    <audio id="alarmTone" src="alarm.mp3"></audio>
+    <!-- Action Buttons -->
+    <div class="extraButtons">
+        <button id="skipButton" class="extraBtn">Skip</button>
+        <button id="reloadButton" class="extraBtn">Over</button>
+    </div>
+    <audio id="alarmTone" src="audio.mp3"></audio>
     <script src="script.js"></script>
 </body>
 
